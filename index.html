@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Mishelle</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF7E1; 
+            color: #4A4A4A;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #e60012;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 40px;
+            width: 40px;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFF176; /* Amarillo suave para hover */
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px;
+            background: #FFF; /* Fondo blanco para la sección */
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+            border-radius: 15px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #e60012; 
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #4A4A4A;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .box {
+            background: #FFF; 
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .projects li {
+            list-style: none;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .reviews {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .review-boxes {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .review {
+            flex: 1;
+            background: #FFF;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #e60012; 
+            color: white;
+            margin-top: 50px;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            .review-boxes {
+                flex-direction: column;
+            }
+
+            .box {
+                padding: 20px;
+            }
+        }
+
+       
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <img src="https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-and-charlie-brown-paul-breen-transparent.png" alt="">
+                <span>Mishelle Trejo</span>
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="sobre_mi.html">Sobre mí</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="proyectos.html">Danza Folklorica</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Desarrolladora Web y Experta en Mantenimiento</h1>
+            <p>Amante de ofrecer mantenimiento y desarrollar nuevas ideas.</p>
+        </section>
+
+        <div class="grid-container">
+            <div class="box">
+                <h3>Proyectos</h3>
+                <ul class="projects">
+                    <li>Portafolio Personal</li>
+                    <li>Calculadora Interactiva</li>
+                    <li>Ejercicios de Photoshop</li>
+                    <li>Temporizador de Cuenta Regresiva</li>
+                    <li>Página de Mascotas de la Casa</li>
+                    <li>Ejercicios de Programación</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Experiencia</h3>
+                <p><strong>Proyectos Personales</strong><br> Desarrollo de interfaces web modernas y funcionales.</p>
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Diseño Web</li>
+                    <li>Reparación de problemas en impresoras y computadoras</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Educación</h3>
+                <p>Estudiando Informatica y con interés en mantenimiento.</p>
+                <h4>Cursos y conocimientos:</h4>
+                <ul>
+                    <li>Programación en JavaScript</li>
+                    <li>Diseño de Interfaces</li>
+                    <li>Reparación de dispositivos</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="reviews">
+            <h3>Opiniones sobre mí</h3>
+            <div class="review-boxes">
+                <div class="review">
+                    <p>Mishelle es una persona de buen corazón la verdad, bien comprensiva y muy interesante, respeta el espacio de las personas y eso es bueno, sabe como dar palabras de apoyo en situaciones malas.</p>
+                    <p><strong>Ana Lovo</strong><br> Amiga</p>
+                </div>
+                <div class="review">
+                    <p>Mishelle es muy especial, es dedicada en lo que le gusta, alguien que estaría dispuesta a quitarse la comida de la boca por dársela a alguien más, es una persona muy servicial, amable, honrada, es muy bonita tanto física como su forma de ser, es alguien muy inteligente y trabajadora.</p>
+                    <p><strong>Jorge Trejo</strong><br> Familia</p>
+                </div>
+                <div class="review">
+                    <p>Es una persona muy aplicada, inteligente, es alguien que no se rinde siempre intenta las cosas hasta que le salgan bien, es temerosa a Dios, sincera.</p>
+                    <p><strong>Susan Chávez</strong><br> Familia</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Mishelle Trejo - Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>
